@@ -1,6 +1,6 @@
-# RouteLab
+# Network Routing Simulator
 
-RouteLab is a browser-based network routing simulator that demonstrates how routers select optimal paths, maintain routing tables, and respond to network congestion and link failures. It provides an interactive environment for visualizing routing algorithms and understanding network behavior without requiring physical routers or real network traffic.
+This is a browser-based network routing simulator that demonstrates how routers select optimal paths, maintain routing tables, and respond to network congestion and link failures. It provides an interactive environment for visualizing routing algorithms and understanding network behavior without requiring physical routers or real network traffic.
 
 ## Overview
 
