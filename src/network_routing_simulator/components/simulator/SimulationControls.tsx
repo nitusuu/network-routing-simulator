@@ -1,0 +1,6 @@
+"use client";
+import { useNetworkStore } from "@/store/networkStore";
+export default function SimulationControls() {
+  const { topology, source, destination, algorithm, setSource, setDestination, setAlgorithm, runRoute } = useNetworkStore();
+  return <section className="card"><h2>Simulation controls</h2><div className="controls-grid"><label>Source router<select value={source} onChange={(e) => setSource(e.target.value)}>{topology.routers.map((r) => <option key={r.id} value={r.id}>{r.id}</option>)}</select></label><label>Destination router<select value={destination} onChange={(e) => setDestination(e.target.value)}>{topology.routers.map((r) => <option key={r.id} value={r.id}>{r.id}</option>)}</select></label><label>Algorithm<select value={algorithm} onChange={(e) => setAlgorithm(e.target.value as "Dijkstra" | "Distance Vector")}><option>Dijkstra</option><option>Distance Vector</option></select></label><button className="button primary" onClick={runRoute}>Run simulation</button></div></section>;
+}

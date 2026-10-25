@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "network-routing-simulator"
+version = "0.1.0"
+description = "A network routing simulator for modeling route selection and packet flow."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "networkx>=3.2.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
